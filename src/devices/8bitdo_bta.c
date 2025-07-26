@@ -47,7 +47,7 @@ void process_8bitdo_bta(uint8_t dev_addr, uint8_t instance, uint8_t const* repor
 
     if (input_report.a) TU_LOG1("A ");
     if (input_report.b) TU_LOG1("B ");
-    if (input_report.r) TU_LOG1("R (C) ");
+    if (input_report.r) TU_LOG1("R ");
     if (input_report.x) TU_LOG1("X ");
     if (input_report.y) TU_LOG1("Y ");
     if (input_report.l) TU_LOG1("L ");
