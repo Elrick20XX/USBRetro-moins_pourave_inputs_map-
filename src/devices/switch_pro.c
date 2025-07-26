@@ -148,10 +148,10 @@ void input_report_switch_pro(uint8_t dev_addr, uint8_t instance, uint8_t const* 
       if (update_report.b) TU_LOG1("B ");
       if (update_report.a) TU_LOG1("A ");
       if (update_report.x) TU_LOG1("X ");
-      if (update_report.l) TU_LOG1("L ");
-      if (update_report.r) TU_LOG1("R ");
-      if (update_report.zl) TU_LOG1("ZL ");
-      if (update_report.zr) TU_LOG1("ZR ");
+      if (update_report.l) TU_LOG1("ZL ");
+      if (update_report.r) TU_LOG1("ZR ");
+      if (update_report.zl) TU_LOG1("L ");
+      if (update_report.zr) TU_LOG1("R ");
       if (update_report.lstick) TU_LOG1("LStick ");
       if (update_report.rstick) TU_LOG1("RStick ");
       if (update_report.select) TU_LOG1("Select ");
@@ -171,9 +171,9 @@ void input_report_switch_pro(uint8_t dev_addr, uint8_t instance, uint8_t const* 
       bool bttn_b2 = update_report.a;
       bool bttn_b3 = update_report.y;
       bool bttn_b4 = update_report.x;
-      bool bttn_l1 = update_report.zl;
-      bool bttn_r1 = update_report.zr;
-      bool bttn_s1 = update_report.select || update_report.l || update_report.r;
+      bool bttn_l1 = update_report.l;
+      bool bttn_r1 = update_report.r;
+      bool bttn_s1 = update_report.select || update_report.zl || update_report.zr;
       bool bttn_s2 = update_report.start;
       bool bttn_a1 = update_report.home;
 
