@@ -147,11 +147,11 @@ void input_report_switch_pro(uint8_t dev_addr, uint8_t instance, uint8_t const* 
       if (update_report.y) TU_LOG1("Y ");
       if (update_report.b) TU_LOG1("B ");
       if (update_report.a) TU_LOG1("A ");
-      if (update_report.x) TU_LOG1("X ");
-      if (update_report.l) TU_LOG1("ZL ");
-      if (update_report.r) TU_LOG1("ZR ");
-      if (update_report.zl) TU_LOG1("L ");
-      if (update_report.zr) TU_LOG1("R ");
+      if (update_report.x) TU_LOG1("X ");    
+      if (update_report.l) TU_LOG1("ZL ");   //
+      if (update_report.r) TU_LOG1("ZR ");   // Inversion ZL/ZR & L/R
+      if (update_report.zl) TU_LOG1("L ");   //
+      if (update_report.zr) TU_LOG1("R ");  //
       if (update_report.lstick) TU_LOG1("LStick ");
       if (update_report.rstick) TU_LOG1("RStick ");
       if (update_report.select) TU_LOG1("Select ");
