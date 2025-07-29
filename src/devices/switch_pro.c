@@ -195,7 +195,7 @@ void input_report_switch_pro(uint8_t dev_addr, uint8_t instance, uint8_t const* 
           dpad_right = update_report.right;
           dpad_down  = update_report.down;
           dpad_left  = update_report.left;
-          bttn_l1 = update_report.l;
+          bttn_l1 = update_report.zl;
           bttn_s2 = false;
 
           leftX = scale_analog_switch_pro(update_report.left_x + 127);
