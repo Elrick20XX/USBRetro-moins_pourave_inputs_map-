@@ -1,4 +1,5 @@
 // switch_pro.c
+// Modif 20XX Year
 #include "switch_pro.h"
 #include "globals.h"
 #include "bsp/board_api.h"
@@ -147,11 +148,11 @@ void input_report_switch_pro(uint8_t dev_addr, uint8_t instance, uint8_t const* 
       if (update_report.y) TU_LOG1("Y ");
       if (update_report.b) TU_LOG1("B ");
       if (update_report.a) TU_LOG1("A ");
-      if (update_report.x) TU_LOG1("X ");    
-      if (update_report.l) TU_LOG1("L ");   
-      if (update_report.r) TU_LOG1("R ");   
-      if (update_report.zl) TU_LOG1("ZL ");   
-      if (update_report.zr) TU_LOG1("ZR ");  
+      if (update_report.x) TU_LOG1("X ");
+      if (update_report.l) TU_LOG1("L ");
+      if (update_report.r) TU_LOG1("R ");
+      if (update_report.zl) TU_LOG1("ZL ");
+      if (update_report.zr) TU_LOG1("ZR ");
       if (update_report.lstick) TU_LOG1("LStick ");
       if (update_report.rstick) TU_LOG1("RStick ");
       if (update_report.select) TU_LOG1("Select ");
@@ -171,9 +172,9 @@ void input_report_switch_pro(uint8_t dev_addr, uint8_t instance, uint8_t const* 
       bool bttn_b2 = update_report.a;
       bool bttn_b3 = update_report.y;
       bool bttn_b4 = update_report.x;
-      bool bttn_l1 = update_report.zl;                     // Inversion ZL/ZR & L/R buttons
-      bool bttn_r1 = update_report.zr;                    //
-      bool bttn_s1 = update_report.l || update_report.r; //
+      bool bttn_l1 = update_report.zl;                   //
+      bool bttn_r1 = update_report.zr;                   //
+      bool bttn_s1 = update_report.l || update_report.r; // Inversion ZL/ZR & L/R buttons
       bool bttn_s2 = update_report.start || update_report.select || update_report.home; // Select & Home modified in S2
 
       uint8_t leftX = 0;
@@ -194,7 +195,7 @@ void input_report_switch_pro(uint8_t dev_addr, uint8_t instance, uint8_t const* 
           dpad_right = update_report.right;
           dpad_down  = update_report.down;
           dpad_left  = update_report.left;
-          bttn_l1 = update_report.zl;
+          bttn_l1 = update_report.l;
           bttn_s2 = false;
 
           leftX = scale_analog_switch_pro(update_report.left_x + 127);
