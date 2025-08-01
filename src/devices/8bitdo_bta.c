@@ -1,4 +1,5 @@
 // 8bitdo_bta.c
+// 20XX Version
 #include "8bitdo_bta.h"
 #include "globals.h"
 
@@ -72,13 +73,13 @@ void process_8bitdo_bta(uint8_t dev_addr, uint8_t instance, uint8_t const* repor
                ((dpad_right)          ? 0x00 : USBR_BUTTON_DR) |
                ((input_report.b)      ? 0x00 : USBR_BUTTON_B1) |
                ((input_report.a)      ? 0x00 : USBR_BUTTON_B2) |
-               ((input_report.y)      ? 0x00 : USBR_BUTTON_B3) |
-               ((input_report.x)      ? 0x00 : USBR_BUTTON_B4) |
-               ((input_report.l)      ? 0x00 : USBR_BUTTON_L1) |
-               ((input_report.r)      ? 0x00 : USBR_BUTTON_R1) |
-               ((input_report.l2)     ? 0x00 : USBR_BUTTON_L2) |
-               ((input_report.r2)     ? 0x00 : USBR_BUTTON_R2) |
-               ((input_report.select) ? 0x00 : USBR_BUTTON_S1) |
+               ((input_report.y)      ? 0x00 : USBR_BUTTON_B4) |
+               ((input_report.x)      ? 0x00 : USBR_BUTTON_B3  ) |
+               ((input_report.l)      ? 0x00 : USBR_BUTTON_L2) | // Inversion L1/R1 & L2/R2
+               ((input_report.r)      ? 0x00 : USBR_BUTTON_R2) | //
+               ((input_report.l2)     ? 0x00 : USBR_BUTTON_L1) | //
+               ((input_report.r2)     ? 0x00 : USBR_BUTTON_R1) | //
+               ((input_report.select) ? 0x00 : USBR_BUTTON_S2) | // Changed S1 to S2
                ((input_report.start)  ? 0x00 : USBR_BUTTON_S2) |
                ((input_report.l3)     ? 0x00 : USBR_BUTTON_L3) |
                ((input_report.r3)     ? 0x00 : USBR_BUTTON_R3) |
