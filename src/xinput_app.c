@@ -1,4 +1,5 @@
 // xinput_app.c
+// 20XX Version
 #include "tusb.h"
 #include "globals.h"
 #include "xinput_host.h"
@@ -123,15 +124,15 @@ void tuh_xinput_report_received_cb(uint8_t dev_addr, uint8_t instance, xinputh_i
                 ((p->wButtons & XINPUT_GAMEPAD_B)              ? 0x00 : USBR_BUTTON_B1) |
                 ((p->wButtons & XINPUT_GAMEPAD_X)              ? 0x00 : USBR_BUTTON_B4) |
                 ((p->wButtons & XINPUT_GAMEPAD_Y)              ? 0x00 : USBR_BUTTON_B3) |
-                ((p->wButtons & XINPUT_GAMEPAD_LEFT_SHOULDER)  ? 0x00 : USBR_BUTTON_S1) | //
-                ((p->wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER) ? 0x00 : USBR_BUTTON_S1) | // Change R1 & L1 in S1
+                ((p->wButtons & XINPUT_GAMEPAD_LEFT_SHOULDER)  ? 0x00 : USBR_BUTTON_S1) | // Changed L1 to S1
+                ((p->wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER) ? 0x00 : USBR_BUTTON_S1) | // Changed R1 to S1
                 ((analog_l > 200)                              ? 0x00 : USBR_BUTTON_L2) |
                 ((analog_r > 200)                              ? 0x00 : USBR_BUTTON_R2) |
-                ((p->wButtons & XINPUT_GAMEPAD_BACK)           ? 0x00 : USBR_BUTTON_S2) |
-                ((p->wButtons & XINPUT_GAMEPAD_START)          ? 0x00 : USBR_BUTTON_S2) | // Change S1 in S2
+                ((p->wButtons & XINPUT_GAMEPAD_BACK)           ? 0x00 : USBR_BUTTON_S2) | // Changed S1 to S2
+                ((p->wButtons & XINPUT_GAMEPAD_START)          ? 0x00 : USBR_BUTTON_S2) |
                 ((p->wButtons & XINPUT_GAMEPAD_LEFT_THUMB)     ? 0x00 : USBR_BUTTON_L3) |
                 ((p->wButtons & XINPUT_GAMEPAD_RIGHT_THUMB)    ? 0x00 : USBR_BUTTON_R3) |
-                ((p->wButtons & XINPUT_GAMEPAD_GUIDE)          ? 0x00 : USBR_BUTTON_S2) | // Change A1 in S2
+                ((p->wButtons & XINPUT_GAMEPAD_GUIDE)          ? 0x00 : USBR_BUTTON_A1) |
                 ((1)/*has_6btns*/                              ? 0x00 : 0x800));
 
       post_globals(dev_addr, instance, buttons, analog_1x, analog_1y, analog_2x, analog_2y, analog_l, analog_r, 0, jsSpinner);
