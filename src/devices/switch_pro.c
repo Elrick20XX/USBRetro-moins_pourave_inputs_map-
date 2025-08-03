@@ -1,5 +1,4 @@
 // switch_pro.c
-// Modif 20XX Year
 #include "switch_pro.h"
 #include "globals.h"
 #include "bsp/board_api.h"
@@ -172,10 +171,11 @@ void input_report_switch_pro(uint8_t dev_addr, uint8_t instance, uint8_t const* 
       bool bttn_b2 = update_report.a;
       bool bttn_b3 = update_report.y;
       bool bttn_b4 = update_report.x;
-      bool bttn_l1 = update_report.zl;                   //
-      bool bttn_r1 = update_report.zr;                   //
-      bool bttn_s1 = update_report.l || update_report.r; // Inversion ZL/ZR & L/R buttons
-      bool bttn_s2 = update_report.start || update_report.select || update_report.home; // Select & Home modified in S2
+      bool bttn_l1 = update_report.l;
+      bool bttn_r1 = update_report.r;
+      bool bttn_s1 = update_report.select || update_report.zl || update_report.zr;
+      bool bttn_s2 = update_report.start;
+      bool bttn_a1 = update_report.home;
 
       uint8_t leftX = 0;
       uint8_t leftY = 0;
@@ -222,11 +222,11 @@ void input_report_switch_pro(uint8_t dev_addr, uint8_t instance, uint8_t const* 
                  ((bttn_b2)              ? 0x00 : USBR_BUTTON_B2) |
                  ((bttn_b3)              ? 0x00 : USBR_BUTTON_B3) |
                  ((bttn_b4)              ? 0x00 : USBR_BUTTON_B4) |
-                 ((bttn_l1)              ? 0x00 : USBR_BUTTON_L1) |
-                 ((bttn_r1)              ? 0x00 : USBR_BUTTON_R1) |
-                 ((update_report.sr_l)   ? 0x00 : USBR_BUTTON_L2) |
-                 ((update_report.sr_r)   ? 0x00 : USBR_BUTTON_R2) |
-                 ((bttn_s1)              ? 0x00 : USBR_BUTTON_S1) |
+                // ((bttn_l1)              ? 0x00 : USBR_BUTTON_S1) |
+                 ((bttn_r1)              ? 0x00 : USBR_BUTTON_S1) |
+                 ((update_report.zl)   ? 0x00 : USBR_BUTTON_L1) |
+                 ((update_report.zr)   ? 0x00 : USBR_BUTTON_R1) |
+                 // ((bttn_s1)              ? 0x00 : USBR_BUTTON_S2) |
                  ((bttn_s2)              ? 0x00 : USBR_BUTTON_S2) |
                  ((update_report.lstick) ? 0x00 : USBR_BUTTON_L3) |
                  ((update_report.rstick) ? 0x00 : USBR_BUTTON_R3) |
