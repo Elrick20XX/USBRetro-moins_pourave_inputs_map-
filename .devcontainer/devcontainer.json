@@ -2,12 +2,9 @@
   "name": "USBRetro Development",
   "build": {
     "context": "..",
-    "dockerfile": "../Dockerfile",
-    "args": { 
-      "DEBIAN_FRONTEND": "noninteractive"
-    }
+    "dockerfile": "../Dockerfile"
   },
-  "settings": { 
+  "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
   "extensions": [
@@ -16,7 +13,7 @@
     "ms-vscode.cpptools"
   ],
   "forwardPorts": [],
-  "postCreateCommand": "echo 'Container for USBRetro development is ready!'",
+  "postCreateCommand": "echo 'Container for USBRetro development is ready!'"/*,
   "remoteUser": "root",
-  "workspaceFolder": "/root/workspace/USBRetro"
+  "workspaceFolder": "/root/workspace/USBRetro"*/
 }
