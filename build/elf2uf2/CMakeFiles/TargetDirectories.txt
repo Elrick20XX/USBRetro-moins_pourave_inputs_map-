@@ -1,0 +1,5 @@
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/CMakeFiles/elf2uf2.dir
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/CMakeFiles/edit_cache.dir
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/CMakeFiles/rebuild_cache.dir
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir

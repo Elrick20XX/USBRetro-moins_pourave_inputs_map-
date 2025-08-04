@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/CMakeFiles/ELF2UF2Build
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/CMakeFiles/ELF2UF2Build.rule
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/CMakeFiles/ELF2UF2Build-complete.rule
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule

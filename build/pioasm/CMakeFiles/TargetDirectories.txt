@@ -1,0 +1,3 @@
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/pioasm/CMakeFiles/pioasm.dir
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/pioasm/CMakeFiles/edit_cache.dir
+/workspaces/USBRetro-moins_pourave_inputs_map-/build/pioasm/CMakeFiles/rebuild_cache.dir
