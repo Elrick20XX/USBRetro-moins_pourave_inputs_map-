@@ -87,14 +87,14 @@ If you run into any issues, then please submit a bug report on the issues tab of
 
 | USBRetro    | X-input     | Switch      | PlayStation | DirectInput |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| B1          | A           | B           | Cross       | 2           |
-| B2          | B           | A           | Circle      | 3           |
-| B3          | X           | Y           | Square      | 1           |
-| B4          | Y           | X           | Triangle    | 4           |
-| L1          | LB          | L           | L1          | 5           |
-| R1          | RB          | R           | R1          | 6           |
-| L2          | LT          | ZL          | L2          | 7           |
-| R2          | RT          | ZR          | R2          | 8           |
+| B1          | B           | B           | Cross       | 2           |
+| B2          | A           | A           | Circle      | 3           |
+| B3          | Y           | Y           | Square      | 1           |
+| B4          | X           | X           | Triangle    | 4           |
+| L1          | LB          | ZL           | L1          | 5           |
+| R1          | RB          | ZR           | R1          | 6           |
+| L2          | LT          | L          | L2          | 7           |
+| R2          | RT          | R          | R2          | 8           |
 | S1          | Back        | Minus       | Select/Share| 9           |
 | S2          | Start       | Options     | Start/Option| 10          |
 | L3          | LS          | LS          | L3          | 11          |
