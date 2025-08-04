@@ -120,15 +120,15 @@ void tuh_xinput_report_received_cb(uint8_t dev_addr, uint8_t instance, xinputh_i
                 ((p->wButtons & XINPUT_GAMEPAD_DPAD_DOWN)      ? 0x00 : USBR_BUTTON_DD) |
                 ((p->wButtons & XINPUT_GAMEPAD_DPAD_LEFT)      ? 0x00 : USBR_BUTTON_DL) |
                 ((p->wButtons & XINPUT_GAMEPAD_DPAD_RIGHT)     ? 0x00 : USBR_BUTTON_DR) |
-                ((p->wButtons & XINPUT_GAMEPAD_A)              ? 0x00 : USBR_BUTTON_B2) |  //
-                ((p->wButtons & XINPUT_GAMEPAD_B)              ? 0x00 : USBR_BUTTON_B1) | // Switch between B1 & B2
-                ((p->wButtons & XINPUT_GAMEPAD_X)              ? 0x00 : USBR_BUTTON_B4) |// Switch between B3 & B4
-                ((p->wButtons & XINPUT_GAMEPAD_Y)              ? 0x00 : USBR_BUTTON_B3) |//
-                //((p->wButtons & XINPUT_GAMEPAD_LEFT_SHOULDER)  ? 0x00 : USBR_BUTTON_S1) | 
-                ((p->wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER) ? 0x00 : USBR_BUTTON_S1) | // Switch R1 to S1
+                ((p->wButtons & XINPUT_GAMEPAD_A)              ? 0x00 : USBR_BUTTON_B2) |
+                ((p->wButtons & XINPUT_GAMEPAD_B)              ? 0x00 : USBR_BUTTON_B1) |
+                ((p->wButtons & XINPUT_GAMEPAD_X)              ? 0x00 : USBR_BUTTON_B4) |
+                ((p->wButtons & XINPUT_GAMEPAD_Y)              ? 0x00 : USBR_BUTTON_B3) |
+                ((p->wButtons & XINPUT_GAMEPAD_LEFT_SHOULDER)  ? 0x00 : USBR_BUTTON_L1) |
+                ((p->wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER) ? 0x00 : USBR_BUTTON_S1) |
                 ((analog_l > 200)                              ? 0x00 : USBR_BUTTON_L2) |
                 ((analog_r > 200)                              ? 0x00 : USBR_BUTTON_R2) |
-                // ((p->wButtons & XINPUT_GAMEPAD_BACK)           ? 0x00 : USBR_BUTTON_S2) |
+                ((p->wButtons & XINPUT_GAMEPAD_BACK)           ? 0x00 : USBR_BUTTON_R1) |
                 ((p->wButtons & XINPUT_GAMEPAD_START)          ? 0x00 : USBR_BUTTON_S2) |
                 ((p->wButtons & XINPUT_GAMEPAD_LEFT_THUMB)     ? 0x00 : USBR_BUTTON_L3) |
                 ((p->wButtons & XINPUT_GAMEPAD_RIGHT_THUMB)    ? 0x00 : USBR_BUTTON_R3) |
