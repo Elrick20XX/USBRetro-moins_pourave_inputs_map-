@@ -5,3 +5,9 @@
 .vscode
 src/build
 build
+build/CMakeFiles/CMakeOutput.log
+build/CMakeFiles/Makefile.cmake
+build/CMakeFiles/usbretro_ngc.dir/compiler_depend.make
+build/elf2uf2/CMakeFiles/elf2uf2.dir/compiler_depend.make
+build/pioasm/CMakeFiles/pioasm.dir/compiler_depend.make
+build/CMakeCache.txt
