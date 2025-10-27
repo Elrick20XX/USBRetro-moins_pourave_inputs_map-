@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/github/license/RobertDaleSmith/USBRetro" />
   <img src="https://img.shields.io/github/actions/workflow/status/RobertDaleSmith/USBRetro/.github/workflows/build.yml" />
 </p>
-<p align="justify">USBRetro is an open source controller adapter firmware for converting USB controllers, keyboards, and mice to various retro consoles' native controller protocols.</p>
+<p align="justify">USBRetro is an open source controller adapter firmware for converting USB controllers, keyboards, and mice to various retro consoles' native controller protocols. If you want to play on your Gamecube/Wii with your modern controller but you find that the original mapping are strange ? This fork is made for you ! The rest of this repo stay unchanged.</p>
 
 ### Update Instructions
 
@@ -85,40 +85,22 @@ If you run into any issues, then please submit a bug report on the issues tab of
 
 ### Input Map
 
-| USBRetro    | X-input     | Switch      | PlayStation | DirectInput |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| B1          | B           | B           | Cross       | 2           |
-| B2          | A           | A           | Circle      | 3           |
-| B3          | Y           | Y           | Square      | 1           |
-| B4          | X           | X           | Triangle    | 4           |
-| L1          | LB          | ZL           | L1          | 5           |
-| R1          | RB          | ZR           | R1          | 6           |
-| L2          | LT          | L          | L2          | 7           |
-| R2          | RT          | R          | R2          | 8           |
-| S1          | Back        | Minus       | Select/Share| 9           |
-| S2          | Start       | Options     | Start/Option| 10          |
-| L3          | LS          | LS          | L3          | 11          |
-| R3          | RS          | RS          | R3          | 12          |
-| A1          | Guide       | Home        | PS          | 13          |
-| A2          |             | Capture     | Touchpad    | 14          |
-
-### Output Map
-| USBRetro    | PCEngine      | Nuon        | GameCube    | Xbox One    |
-| ----------- | ------------- | ----------- | ----------- | ----------- |
-| B1          | II            | A           | B           | A           |
-| B2          | I             | C-Down      | A           | B           |
-| B3          | IV (turbo II) | B           | Y           | X           |
-| B4          | III (turbo I) | C-Left      | X           | Y           |
-| L1          | VI            | L           | L           | LB          |
-| R1          | V             | R           | R           | RB          |
-| L2          |               | C-Up        | L (switch Z)| LT          |
-| R2          |               | C-Right     | R (switch Z)| RT          |
-| S1          | Select        | Nuon        | Z           | Back        |
-| S2          | Run           | Start       | Start       | Start       |
-| L3          |               |             |             | LS          |
-| R3          |               |             |             | RS          |
-| A1          |               |             |             | Guide       |
-| A2          |               | Nuon        | Z           |             |
+| USBRetro    | X-input     | Switch      | PlayStation | DirectInput |  |Gamecube output |
+| ----------- | ----------- | ----------- | ----------- | ----------- |  |----------------|
+| B1          | B           | B           | Cross       | 2           |  | B              |
+| B2          | A           | A           | Circle      | 3           |  | A              |
+| B3          | Y           | Y           | Square      | 1           |  | Y              |
+| B4          | X           | X           | Triangle    | 4           |  | X              |
+| L1          | LB          | ZL           | L1          | 5          |  | L              |
+| R1          | RB          | ZR           | R1          | 6          |  | R              |
+| L2          | LT          |             | L2          | 7           |  | Z              |
+| R2          | RT          |             | R2          | 8           |  | Z              |
+| S1          | Back        | Minus/R       | Select/Share| 9         |  | Z              |
+| S2          | Start       | Options     | Start/Option| 10          |  | Start          |
+| L3          | LS          | LS          | L3          | 11          |  |----------------|
+| R3          | RS          | RS          | R3          | 12          |  |----------------|
+| A1          | Guide       | Home        | PS          | 13          |  |----------------|
+| A2          |             | Capture     | Touchpad    | 14          |  | Z              |
 
 ## Compiling
 ### Setup
