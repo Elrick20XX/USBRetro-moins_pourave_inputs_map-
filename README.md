@@ -85,22 +85,24 @@ If you run into any issues, then please submit a bug report on the issues tab of
 
 ### Input Map
 
-| USBRetro    | X-input     | Switch      | PlayStation | DirectInput |  |Gamecube output |
-| ----------- | ----------- | ----------- | ----------- | ----------- |  |----------------|
-| B1          | B           | B           | Cross       | 2           |  | B              |
-| B2          | A           | A           | Circle      | 3           |  | A              |
-| B3          | Y           | Y           | Square      | 1           |  | Y              |
-| B4          | X           | X           | Triangle    | 4           |  | X              |
-| L1          | LB          | ZL           | L1          | 5          |  | L              |
-| R1          | RB          | ZR           | R1          | 6          |  | R              |
-| L2          | LT          |             | L2          | 7           |  | Z              |
-| R2          | RT          |             | R2          | 8           |  | Z              |
-| S1          | Back        | Minus/R       | Select/Share| 9         |  | Z              |
-| S2          | Start       | Options     | Start/Option| 10          |  | Start          |
-| L3          | LS          | LS          | L3          | 11          |  |----------------|
-| R3          | RS          | RS          | R3          | 12          |  |----------------|
-| A1          | Guide       | Home        | PS          | 13          |  |----------------|
-| A2          |             | Capture     | Touchpad    | 14          |  | Z              |
+| Switch  | USBRETRO |   | Gamecube Output |
+|---------|----------|---|-----------------|
+| B       | B1       |   | B               |
+| A       | B2       |   | A               |
+| Y       | B3       |   | Y               |
+| X       | B4       |   | X               |
+| ZL      | L1       |   | L               |
+| ZR      | R1       |   | R               |
+| R       | S1       |   | Z               |
+| Plus    | S2       |   | Start           |
+| LS      | L3       |   | --------------  |
+| RS      | R3       |   | --------------  |
+| Home    | A1       |   | --------------  |
+| Capture | A2       |   | --------------  |
+
+
+
+
 
 ## Compiling
 ### Setup
