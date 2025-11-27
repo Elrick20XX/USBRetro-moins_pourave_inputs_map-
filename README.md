@@ -100,9 +100,8 @@ If you run into any issues, then please submit a bug report on the issues tab of
 | **Plus**            | S2                           |      | Start                        |
 | **Minus**           | \-\-\-\-\-\-\-\-\-\-\-\-\-\- |      | \-\-\-\-\-\-\-\-\-\-\-\-\-\- |
 
-#### Xinput
-                   
 
+#### Xinput                  
 | **Xinput** | **USBRETRO** |      | **Gamecube Output** |
 |------------|--------------|------|---------------------|
 | **B**      | B1           |      | B                   |
@@ -116,7 +115,9 @@ If you run into any issues, then please submit a bug report on the issues tab of
 | **Start**  | S2           |      | Start               |
 | **Select** | S1           |      | Z                   |
 
+
 #### Playstation
+
 
 
 
