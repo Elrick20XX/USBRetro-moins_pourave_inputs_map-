@@ -110,10 +110,10 @@ void input_sony_ds5(uint8_t dev_addr, uint8_t instance, uint8_t const* report, u
                  ((dpad_down)           ? 0x00 : USBR_BUTTON_DD) |
                  ((dpad_left)           ? 0x00 : USBR_BUTTON_DL) |
                  ((dpad_right)          ? 0x00 : USBR_BUTTON_DR) |
-                 ((ds5_report.cross)    ? 0x00 : USBR_BUTTON_B1) |
-                 ((ds5_report.circle)   ? 0x00 : USBR_BUTTON_B2) |
-                 ((ds5_report.square)   ? 0x00 : USBR_BUTTON_B3) |
-                 ((ds5_report.triangle) ? 0x00 : USBR_BUTTON_B4) |
+                 ((ds5_report.cross)    ? 0x00 : USBR_BUTTON_B2) |
+                 ((ds5_report.circle)   ? 0x00 : USBR_BUTTON_B1) |
+                 ((ds5_report.square)   ? 0x00 : USBR_BUTTON_B4) |
+                 ((ds5_report.triangle) ? 0x00 : USBR_BUTTON_B3) |
                  ((ds5_report.l1)       ? 0x00 : USBR_BUTTON_L1) |
                  ((ds5_report.r1)       ? 0x00 : USBR_BUTTON_R1) |
                  ((ds5_report.l2)       ? 0x00 : USBR_BUTTON_L2) |
