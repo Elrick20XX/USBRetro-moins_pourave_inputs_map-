@@ -55,10 +55,10 @@ void process_sony_psc(uint8_t dev_addr, uint8_t instance, uint8_t const* report,
                ((psc_report.square)   ? 0x00 : USBR_BUTTON_B4) |
                ((psc_report.triangle) ? 0x00 : USBR_BUTTON_B3) |
                ((psc_report.l1)       ? 0x00 : USBR_BUTTON_L1) |
-               ((psc_report.r1)       ? 0x00 : USBR_BUTTON_R1) |
+               ((psc_report.r1)       ? 0x00 : USBR_BUTTON_S1) |
                ((psc_report.l2)       ? 0x00 : USBR_BUTTON_L2) |
                ((psc_report.r2)       ? 0x00 : USBR_BUTTON_R2) |
-               ((psc_report.share)    ? 0x00 : USBR_BUTTON_S1) |
+               ((psc_report.share)    ? 0x00 : USBR_BUTTON_R1) |
                ((psc_report.option)   ? 0x00 : USBR_BUTTON_S2) |
                ((0)                   ? 0x00 : USBR_BUTTON_L3) |
                ((0)                   ? 0x00 : USBR_BUTTON_R3) |
