@@ -127,10 +127,10 @@ void input_sony_ds3(uint8_t dev_addr, uint8_t instance, uint8_t const* report, u
                  ((ds3_report.down)     ? 0x00 : USBR_BUTTON_DD) |
                  ((ds3_report.left)     ? 0x00 : USBR_BUTTON_DL) |
                  ((ds3_report.right)    ? 0x00 : USBR_BUTTON_DR) |
-                 ((ds3_report.cross)    ? 0x00 : USBR_BUTTON_B1) |
-                 ((ds3_report.circle)   ? 0x00 : USBR_BUTTON_B2) |
-                 ((ds3_report.square)   ? 0x00 : USBR_BUTTON_B3) |
-                 ((ds3_report.triangle) ? 0x00 : USBR_BUTTON_B4) |
+                 ((ds3_report.cross)    ? 0x00 : USBR_BUTTON_B2) |
+                 ((ds3_report.circle)   ? 0x00 : USBR_BUTTON_B1) |
+                 ((ds3_report.square)   ? 0x00 : USBR_BUTTON_B4) |
+                 ((ds3_report.triangle) ? 0x00 : USBR_BUTTON_B3) |
                  ((button_l1)           ? 0x00 : USBR_BUTTON_L1) |
                  ((button_r1)           ? 0x00 : USBR_BUTTON_R1) |
                  ((ds3_report.l2)       ? 0x00 : USBR_BUTTON_L2) |
