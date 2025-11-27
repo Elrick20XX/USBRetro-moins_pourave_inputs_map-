@@ -50,10 +50,10 @@ void process_sony_psc(uint8_t dev_addr, uint8_t instance, uint8_t const* report,
                ((dpad_down)           ? 0x00 : USBR_BUTTON_DD) |
                ((dpad_left)           ? 0x00 : USBR_BUTTON_DL) |
                ((dpad_right)          ? 0x00 : USBR_BUTTON_DR) |
-               ((psc_report.cross)    ? 0x00 : USBR_BUTTON_B1) |
-               ((psc_report.circle)   ? 0x00 : USBR_BUTTON_B2) |
-               ((psc_report.square)   ? 0x00 : USBR_BUTTON_B3) |
-               ((psc_report.triangle) ? 0x00 : USBR_BUTTON_B4) |
+               ((psc_report.cross)    ? 0x00 : USBR_BUTTON_B2) |
+               ((psc_report.circle)   ? 0x00 : USBR_BUTTON_B1) |
+               ((psc_report.square)   ? 0x00 : USBR_BUTTON_B4) |
+               ((psc_report.triangle) ? 0x00 : USBR_BUTTON_B3) |
                ((psc_report.l1)       ? 0x00 : USBR_BUTTON_L1) |
                ((psc_report.r1)       ? 0x00 : USBR_BUTTON_R1) |
                ((psc_report.l2)       ? 0x00 : USBR_BUTTON_L2) |
