@@ -117,12 +117,18 @@ If you run into any issues, then please submit a bug report on the issues tab of
 
 
 #### Playstation
-
-
-
-
-
-
+| **Playstation**   | **USBRETRO** |      | **Gamecube Output** |
+|-------------------|--------------|------|---------------------|
+| **◯**             | B1           |      | B                   |
+| **⤫**             | B2           |      | A                   |
+| **△**             | B3           |      | Y                   |
+| **□**             | B4           |      | X                   |
+| **L1**            | L1           |      | L                   |
+| **R1**            | R1           |      | Z                   |
+| **L2**            | L2           |      | L                   |
+| **R2**            | R2           |      | R                   |
+| **Start/Options** | S2           |      | Start               |
+| **Select/Share**  | S1           |      | R                   |
 
 
 
