@@ -113,7 +113,7 @@ If you run into any issues, then please submit a bug report on the issues tab of
 | **LT**     | L2           |      | L                   |
 | **RT**     | R2           |      | R                   |
 | **Start**  | S2           |      | Start               |
-| **Select** | S1           |      | Z                   |
+| **Back**   | R1           |      | R                   |
 
 
 #### Playstation
