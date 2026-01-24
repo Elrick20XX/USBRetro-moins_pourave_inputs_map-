@@ -6,9 +6,9 @@
 // GameCube button layout:
 //   A (B1) - Large green button
 //   B (B2) - Small red button
-//   X (B4) - Right of A
-//   Y (B3) - Above A
-//   Z (R1) - Digital shoulder
+//   X (B4) - grey right of A
+//   Y (B3) - grey above A
+//   Z (R1) - blue Digital shoulder
 //   L (L2) - Left trigger (analog + digital)
 //   R (R2) - Right trigger (analog + digital)
 //   Start (S2)
@@ -64,31 +64,30 @@ static const profile_t gc_profile_default = {
 };
 
 // ============================================================================
-// PROFILE: SNES - Original SNES Controller Mapping
+// PROFILE: Xbox - Xbox Layout Controller Mapping
 // ============================================================================
-// For SNES-style controllers: L/R as full press, Select → Z
+// For Xbox-style controllers: L/R as Z, Select → Start
 
-static const button_map_entry_t gc_snes_map[] = {
+static const button_map_entry_t gc_xbox_map[] = {
     // Face buttons - same as default
-    MAP_BUTTON(JP_BUTTON_B1, GC_BUTTON_B),
-    MAP_BUTTON(JP_BUTTON_B2, GC_BUTTON_A),
-    MAP_BUTTON(JP_BUTTON_B3, GC_BUTTON_Y),
-    MAP_BUTTON(JP_BUTTON_B4, GC_BUTTON_X),
+    MAP_BUTTON(JP_BUTTON_B1, GC_BUTTON_A),
+    MAP_BUTTON(JP_BUTTON_B2, GC_BUTTON_B),
+    MAP_BUTTON(JP_BUTTON_B3, GC_BUTTON_X),
+    MAP_BUTTON(JP_BUTTON_B4, GC_BUTTON_Y),
 
-    // Shoulders with full analog press
-    MAP_BUTTON_ANALOG(JP_BUTTON_L1, GC_BUTTON_L, ANALOG_TARGET_L2_FULL, 0),
-    MAP_BUTTON_ANALOG(JP_BUTTON_R1, GC_BUTTON_R, ANALOG_TARGET_R2_FULL, 0),
+    // Shoulders → Z
+    MAP_BUTTON_ANALOG(JP_BUTTON_L1, GC_BUTTON_Z),
 
-    // Select → Z
-    MAP_BUTTON(JP_BUTTON_S1, GC_BUTTON_Z),
+    // Select → Start
+    MAP_BUTTON(JP_BUTTON_S1, GC_BUTTON_START),
     MAP_BUTTON(JP_BUTTON_S2, GC_BUTTON_START),
 };
 
-static const profile_t gc_profile_snes = {
-    .name = "snes",
-    .description = "SNES mapping: Select→Z, L/R→full press",
-    .button_map = gc_snes_map,
-    .button_map_count = sizeof(gc_snes_map) / sizeof(gc_snes_map[0]),
+static const profile_t gc_profile_xbox = {
+    .name = "xbox",
+    .description = "Xbox Layout mapping: Select→Start, L→Z",
+    .button_map = gc_xbox_map,
+    .button_map_count = sizeof(gc_xbox_map) / sizeof(gc_xbox_map[0]),
     .l2_behavior = TRIGGER_PASSTHROUGH,
     .r2_behavior = TRIGGER_PASSTHROUGH,
     .l2_threshold = 250,
@@ -107,21 +106,21 @@ static const profile_t gc_profile_snes = {
 // ============================================================================
 // PROFILE: SSBM - Super Smash Bros Melee Competitive
 // ============================================================================
-// Yoink1975's config: L1→Z, LT→Light shield, RT→L+R quit combo
+// Yoink1975's config: L1→X, RT→Light shield, LT→L+R quit combo
 // L3 = walk modifier (50% sensitivity)
 
 static const button_map_entry_t gc_ssbm_map[] = {
     // Face buttons
-    MAP_BUTTON(JP_BUTTON_B1, GC_BUTTON_B),
+    MAP_BUTTON(JP_BUTTON_B1, GC_BUTTON_X),
     MAP_BUTTON(JP_BUTTON_B2, GC_BUTTON_A),
-    MAP_BUTTON(JP_BUTTON_B3, GC_BUTTON_Y),
-    MAP_BUTTON(JP_BUTTON_B4, GC_BUTTON_X),
+    MAP_BUTTON(JP_BUTTON_B3, GC_BUTTON_B),
+    MAP_BUTTON(JP_BUTTON_B4, GC_BUTTON_Y),
 
     // L1 (LB) → Z
-    MAP_BUTTON(JP_BUTTON_L1, GC_BUTTON_Z),
+    MAP_BUTTON(JP_BUTTON_L1, GC_BUTTON_X),
 
     // R1 (RB) → X (for short hop aerials)
-    MAP_BUTTON(JP_BUTTON_R1, GC_BUTTON_X),
+    MAP_BUTTON(JP_BUTTON_R1, GC_BUTTON_Z),
 
     // System
     MAP_DISABLED(JP_BUTTON_S1),
@@ -135,15 +134,15 @@ static const stick_modifier_t gc_ssbm_left_modifiers[] = {
 
 static const profile_t gc_profile_ssbm = {
     .name = "ssbm",
-    .description = "SSBM: LB→Z, L3→walk, 85% stick",
+    .description = "SSBM: LB→x, L3→walk, 85% stick",
     .button_map = gc_ssbm_map,
     .button_map_count = sizeof(gc_ssbm_map) / sizeof(gc_ssbm_map[0]),
-    .l2_behavior = TRIGGER_LIGHT_PRESS,   // Light shield
-    .r2_behavior = TRIGGER_FULL_PRESS,    // Full press for L+R quit combo effect
+    .l2_behavior = TRIGGER_FULL_PRESS,   // Full press for L+R quit combo effect
+    .r2_behavior = TRIGGER_LIGHT_PRESS,    // Light shield
     .l2_threshold = 225,
     .r2_threshold = 140,
-    .l2_analog_value = 43,                // ~17% light shield
-    .r2_analog_value = 0,
+    .l2_analog_value = 0,                
+    .r2_analog_value = 43,                // ~17% light shield
     .left_stick_sensitivity = 0.85f,      // 85% for Melee precision
     .right_stick_sensitivity = 1.0f,
     .left_stick_modifiers = gc_ssbm_left_modifiers,
@@ -160,10 +159,10 @@ static const profile_t gc_profile_ssbm = {
 
 static const button_map_entry_t gc_mkwii_map[] = {
     // Face buttons
-    MAP_BUTTON(JP_BUTTON_B1, GC_BUTTON_B),
-    MAP_BUTTON(JP_BUTTON_B2, GC_BUTTON_A),
-    MAP_BUTTON(JP_BUTTON_B3, GC_BUTTON_Y),
-    MAP_BUTTON(JP_BUTTON_B4, GC_BUTTON_X),
+    MAP_BUTTON(JP_BUTTON_B1, GC_BUTTON_A),
+    MAP_BUTTON(JP_BUTTON_B2, GC_BUTTON_B),
+    MAP_BUTTON(JP_BUTTON_B3, GC_BUTTON_X),
+    MAP_BUTTON(JP_BUTTON_B4, GC_BUTTON_Y),
 
     // L1 (LB) → D-pad Up (for wheelies/tricks)
     MAP_BUTTON(JP_BUTTON_L1, GC_BUTTON_DU),
@@ -245,7 +244,7 @@ static const profile_t gc_profile_fighting = {
 
 static const profile_t gc_profiles[] = {
     gc_profile_default,
-    gc_profile_snes,
+    gc_profile_xbox,
     gc_profile_ssbm,
     gc_profile_mkwii,
     gc_profile_fighting,
